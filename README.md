@@ -1,7 +1,7 @@
 # Parking Lot Management System
 
 ## Overview
-The **Parking Lot Management System** is a robust and scalable solution built using **Spring Boot** to handle parking operations efficiently. It manages vehicle parking, gate operations, billing, payments, and real-time status updates while covering all possible edge cases.
+The **Parking Lot Management System** is a robust and scalable solution built using **Spring Boot** to handle parking operations efficiently. It manages vehicle parking, gate operations, billing, payments, and real-time status updates while covering all possible edge cases. Just point to be noted is that all the logics are made but the APIs are not ready.
 
 ## Features
 - **Multi-Level Parking Lot Management**
@@ -51,18 +51,6 @@ The **Parking Lot Management System** is a robust and scalable solution built us
  ├── utils/
 ```
 
-## API Endpoints
-| Endpoint                  | Method | Description |
-|---------------------------|--------|-------------|
-| `/api/parkinglot/create`  | POST   | Create a new parking lot |
-| `/api/gate/open/{id}`     | PUT    | Open a gate |
-| `/api/gate/close/{id}`    | PUT    | Close a gate |
-| `/api/ticket/generate`    | POST   | Generate a parking ticket |
-| `/api/ticket/{id}`        | GET    | Retrieve ticket details |
-| `/api/payment/make`       | POST   | Make a payment |
-| `/api/payment/status/{id}`| GET    | Get payment status |
-| `/api/parkinglot/status`  | GET    | Get overall parking lot status |
-
 ## Edge Case Handling
 - **Overcrowding:** Prevents vehicles from entering if all spots are occupied.
 - **Incorrect Payments:** Ensures validation of payment details before processing.
@@ -81,11 +69,6 @@ The **Parking Lot Management System** is a robust and scalable solution built us
    spring.datasource.url=jdbc:mysql://localhost:3306/parkinglot
    spring.datasource.username=[root]
    spring.datasource.password=[yourpassword]
-   ```
-3. Build and run the application:
-   ```sh
-   mvn clean install
-   mvn spring-boot:run
    ```
 
 ## License
